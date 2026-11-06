@@ -1,0 +1,9 @@
+{
+  "stage": "Lab 13 - Prediction Drift",
+  "baseline_mean_probability": 0.21900544145169384,
+  "current_mean_probability": 0.5055113343734479,
+  "absolute_mean_shift": 0.286505892921754,
+  "baseline_positive_rate": 0.18252730109204368,
+  "current_positive_rate": 0.5065522620904837,
+  "drift_detected": true
+}

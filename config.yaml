@@ -1,0 +1,18 @@
+project:
+  name: diabetes-prediction-mlops
+  random_state: 42
+data:
+  raw_path: data/raw/diabetes_prediction_dataset.csv
+  target: diabetes
+  test_size: 0.2
+paths:
+  processed_dir: data/processed/labs7_9
+  model_path: models/diabetes_lab7_9_pipeline.joblib
+  evaluation_report: reports/lab7_9_evaluation_report.json
+  quality_gate_report: reports/quality_gate_report.json
+  failure_report: reports/failure_report.json
+  inference_output: outputs/lab7_9_inference_predictions.csv
+  run_log: logs/lab7_9_pipeline_run_log.json
+quality_gate:
+  metric: roc_auc
+  minimum_value: 0.70

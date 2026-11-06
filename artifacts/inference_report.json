@@ -1,0 +1,7 @@
+{
+  "stage": "Lab 8 - Inference",
+  "input_rows": 100000,
+  "output_rows": 100000,
+  "output_path": "outputs\\lab7_9_inference_predictions.csv",
+  "status": "PASSED"
+}

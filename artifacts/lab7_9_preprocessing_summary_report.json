@@ -1,0 +1,19 @@
+{
+  "stage": "Lab 7 - Preprocessing Split",
+  "rows_after_deduplication": 96146,
+  "train_rows": 76916,
+  "test_rows": 19230,
+  "features": [
+    "gender",
+    "age",
+    "hypertension",
+    "heart_disease",
+    "smoking_history",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level"
+  ],
+  "target": "diabetes",
+  "random_state": 42,
+  "status": "PASSED"
+}

@@ -1,0 +1,17 @@
+{
+  "stage": "Lab 7 - Data Loading",
+  "source": "data\\raw\\diabetes_prediction_dataset.csv",
+  "rows": 100000,
+  "columns": [
+    "gender",
+    "age",
+    "hypertension",
+    "heart_disease",
+    "smoking_history",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level",
+    "diabetes"
+  ],
+  "status": "PASSED"
+}

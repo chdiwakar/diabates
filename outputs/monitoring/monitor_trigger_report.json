@@ -1,0 +1,26 @@
+{
+  "stage": "Lab 13 - Monitoring Trigger",
+  "timestamp_utc": "2026-11-06T06:53:04.267214+00:00",
+  "data_drift_detected": true,
+  "prediction_drift_detected": true,
+  "retraining_recommended": true,
+  "steps": [
+    {
+      "script": "12_create_evolved_dataset.py",
+      "return_code": 0
+    },
+    {
+      "script": "12_data_drift.py",
+      "return_code": 0
+    },
+    {
+      "script": "12_prediction_drift.py",
+      "return_code": 0
+    },
+    {
+      "script": "12_concept_drift.py",
+      "return_code": 0
+    }
+  ],
+  "status": "PASSED"
+}

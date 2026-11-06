@@ -1,0 +1,54 @@
+{
+  "stage": "Lab 13 - Data Drift",
+  "baseline_rows": 76916,
+  "current_rows": 19230,
+  "features": {
+    "gender": {
+      "method": "total_variation",
+      "score": 0.0072629819748929215,
+      "drift": false
+    },
+    "age": {
+      "method": "PSI",
+      "score": 0.05115649885463647,
+      "drift": false
+    },
+    "hypertension": {
+      "method": "PSI",
+      "score": 0.0,
+      "drift": false
+    },
+    "heart_disease": {
+      "method": "PSI",
+      "score": 0.0,
+      "drift": false
+    },
+    "smoking_history": {
+      "method": "total_variation",
+      "score": 0.2988923386567789,
+      "drift": true
+    },
+    "bmi": {
+      "method": "PSI",
+      "score": 0.6217656282866724,
+      "drift": true
+    },
+    "HbA1c_level": {
+      "method": "PSI",
+      "score": 0.7492943203543565,
+      "drift": true
+    },
+    "blood_glucose_level": {
+      "method": "PSI",
+      "score": 0.6365348337012482,
+      "drift": true
+    }
+  },
+  "drifted_features": [
+    "smoking_history",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level"
+  ],
+  "drift_detected": true
+}

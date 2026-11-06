@@ -1,0 +1,7 @@
+{
+  "stage": "Lab 8 - Model Quality Gate",
+  "metric": "roc_auc",
+  "minimum_value": 0.7,
+  "actual_value": 0.9600683160587192,
+  "status": "PASSED"
+}

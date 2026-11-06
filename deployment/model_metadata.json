@@ -1,0 +1,20 @@
+{
+  "project": "diabetes-prediction-mlops",
+  "model_name": "Diabetes_Prediction_Production_Model",
+  "model_version": "local-bundle",
+  "model_stage": "Production",
+  "model_artifact": "deployment/model.pkl",
+  "target": "diabetes",
+  "features": [
+    "gender",
+    "age",
+    "hypertension",
+    "heart_disease",
+    "smoking_history",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level"
+  ],
+  "created_at_utc": "2026-11-06T06:39:02.968986+00:00",
+  "note": "Local deployment bundle copied from the validated Lab 7-9 sklearn Pipeline."
+}

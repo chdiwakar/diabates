@@ -1,0 +1,25 @@
+{
+    "registry_status": "READY_FOR_DEPLOYMENT",
+    "model_lineage": {
+        "registered_name": "Diabetes_Prediction_Production_Model",
+        "version": 1,
+        "current_stage": "Production",
+        "run_id": "e394b006f11d4a81a90468c067c07e8b",
+        "artifact_uri": "models:/m-d56b03398ae9416fa9263c850457e7da"
+    },
+    "performance_metrics": {
+        "accuracy": 0.7467532467532467,
+        "precision": 0.6470588235294118,
+        "recall": 0.6111111111111112,
+        "f1_score": 0.6285714285714286,
+        "roc_auc": 0.8312962962962963
+    },
+    "hyperparameters": {
+        "n_estimators": "200",
+        "max_depth": "15",
+        "random_state": "42",
+        "model_family": "RandomForest"
+    },
+    "preprocessing_dependency": "models/preprocessor.pkl",
+    "dataset_lineage": "data/raw/diabetes.csv"
+}

@@ -1,0 +1,34 @@
+__pycache__/
+*.pyc
+.venv/
+mlruns/
+mlflow.db
+data/processed/
+models/*.pkl
+artifacts/*.png
+
+# Virtual environments
+.venv/
+.venv-1/
+venv/
+env/
+
+# MLflow databases and backups
+*.db
+*.db-shm
+*.db-wal
+mlruns/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Logs and temporary files
+logs/
+*.log
+.DS_Store
+Thumbs.db
+
+# Generated inference output
+outputs/lab7_9_inference_predictions.csv

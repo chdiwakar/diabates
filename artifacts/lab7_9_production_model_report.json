@@ -1,0 +1,17 @@
+{
+  "stage": "Lab 7 - Model Training",
+  "model": "LogisticRegression with preprocessing pipeline",
+  "features": [
+    "gender",
+    "age",
+    "hypertension",
+    "heart_disease",
+    "smoking_history",
+    "bmi",
+    "HbA1c_level",
+    "blood_glucose_level"
+  ],
+  "training_rows": 76916,
+  "model_path": "models\\diabetes_lab7_9_pipeline.joblib",
+  "status": "PASSED"
+}

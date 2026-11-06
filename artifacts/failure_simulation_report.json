@@ -1,0 +1,21 @@
+{
+  "stage": "Lab 9 - Failure Handling",
+  "cases": [
+    {
+      "case": "missing_required_column",
+      "failure_detected": true,
+      "expected": "validation error for gender"
+    },
+    {
+      "case": "invalid_target_value",
+      "failure_detected": true,
+      "expected": "target restricted to 0/1"
+    },
+    {
+      "case": "recovery_original_dataset_readable",
+      "failure_detected": true,
+      "expected": "original dataset remains intact"
+    }
+  ],
+  "status": "PASSED"
+}

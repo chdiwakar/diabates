@@ -1,0 +1,44 @@
+name: Lab 8 - Diabetes MLOps CI
+on:
+  push:
+    branches: [main, master]
+    paths:
+      - "config.yaml"
+      - "src/mlops_pipeline/**"
+      - "data/raw/diabetes_prediction_dataset.csv"
+      - "requirements.txt"
+      - ".github/workflows/lab8_ci.yml"
+  pull_request:
+    paths:
+      - "config.yaml"
+      - "src/mlops_pipeline/**"
+      - "data/raw/diabetes_prediction_dataset.csv"
+      - "requirements.txt"
+      - ".github/workflows/lab8_ci.yml"
+  workflow_dispatch:
+jobs:
+  mlops-ci:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt pyyaml
+      - name: Run Diabetes MLOps Pipeline
+        run: python src/mlops_pipeline/churn_prediction_pipeline.py
+      - name: Upload CI artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: lab8-diabetes-ci-${{ github.run_number }}
+          path: |
+            artifacts/**
+            reports/**
+            logs/**
+            outputs/**
+            models/diabetes_lab7_9_pipeline.joblib
+          if-no-files-found: ignore
